@@ -83,6 +83,9 @@ hr {
 }
 
 @media(max-width:600px) {
+    #projects {
+        margin: 100px 20px;
+    }
     .content {
         flex-direction: column;
     }
