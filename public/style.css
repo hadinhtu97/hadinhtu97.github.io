@@ -42,6 +42,7 @@ body, html {
     height: 100%;
     text-align: center;
     background-image: url('https://media.giphy.com/media/3osxYuthM9iM6IEIY8/giphy.gif');
+    background-position: center;
     background-size: cover;
 }
 
@@ -60,7 +61,7 @@ body, html {
 
 hr {
     height: 2px;
-    background-image: linear-gradient(45deg, #B4DFDF, #5AA4C7, cyan);
+    background-image: linear-gradient(45deg, cyan, #dd4814);
     border: none;
 }
 
@@ -156,8 +157,15 @@ hr {
     color: #5e0080;
 }
 
-.gradient-text {
-    background-image: linear-gradient(45deg, cyan, red, green, blue, #dd4814);
+#gradient-text-welcome {
+    background-image: linear-gradient(45deg, #B4DFDF, #5AA4C7, cyan);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#gradient-text-contact {
+    background-image: linear-gradient(45deg, yellow, orange, #dd4814);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
