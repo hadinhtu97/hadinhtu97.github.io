@@ -13,6 +13,7 @@ body, html {
     align-items: center;
     width: 100%;
     background-color: cyan;
+    background: linear-gradient(45deg, rgb(180, 223, 223), rgb(90, 164, 199), cyan);
 }
 
 #navbar>a {
@@ -123,24 +124,20 @@ hr {
 }
 
 #footer {
-    background-color: #dd4814;
-    text-align: right;
-    padding-right: 30px;
+    background: linear-gradient(45deg, yellow, orange, #dd4814);
+    color: #5e0080;
+    text-align: left;
+    padding-left: 30px;
 }
 
 .collapsible {
-    background-color: #777;
-    color: white;
+    background-color: white;
     padding: 18px;
     width: 100%;
     border: none;
     text-align: left;
     outline: none;
-    font-size: 20px;
-}
-
-.collapsible:hover {
-    background-color: #555;
+    font-size: 25px;
 }
 
 .hidden {
@@ -155,4 +152,48 @@ hr {
 .certification>p>a {
     text-decoration: none;
     color: #5e0080;
+}
+
+.gradient-text {
+    background: linear-gradient(45deg, cyan, red, green, blue, #dd4814);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.gradient-text-animation {
+    background: cyan;
+    background: linear-gradient(45deg, cyan, red, green, blue, #dd4814);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: background-back 1s ease forwards;
+}
+
+.gradient-text-animation:hover {
+    animation: background-move 1s ease forwards;
+}
+
+@keyframes background-back {
+    0% {
+        background-size: 1000%
+    }
+    40% {
+        background-size: 1000%
+    }
+    100% {
+        background-size: 100%
+    }
+}
+
+@keyframes background-move {
+    0% {
+        background-size: 100%
+    }
+    80% {
+        background-size: 1000%
+    }
+    100% {
+        background-size: 1000%
+    }
 }
