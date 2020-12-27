@@ -138,6 +138,7 @@ hr {
     text-align: left;
     outline: none;
     font-size: 25px;
+    cursor: pointer;
 }
 
 .hidden {
