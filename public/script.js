@@ -14,7 +14,8 @@ window.addEventListener('load', () => {
   }
 
   setTimeout(() => {
-    document.getElementById('loading').style.display = 'none';
-  }, 5000);
+    // document.getElementById('loading').style.width = 0;
+    document.getElementById('loading').style.height = 0;
+  }, 3000);
 
 })
