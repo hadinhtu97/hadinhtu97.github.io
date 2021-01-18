@@ -1,17 +1,24 @@
 :root {
-    --nav-bg-gradient: linear-gradient(45deg, #B4DFDF, #5AA4C7, cyan);
-    --welcome-text-gradient: linear-gradient(45deg, #B4DFDF, #5AA4C7, cyan);
-    --contact-text-gradient: linear-gradient(45deg, yellow, orange, #dd4814);
+    --nav-gradient: linear-gradient(45deg, #B4DFDF, #5AA4C7, cyan);
+    --footer-gradient: linear-gradient(45deg, yellow, orange, #dd4814);
     --hr-gradient: linear-gradient(45deg, cyan, #dd4814);
-    --footer-bg-gradient: linear-gradient(45deg, yellow, orange, #dd4814);
-    --text-animation-gradient: linear-gradient(45deg, cyan, red, green, blue, #dd4814);
-    --scrollbar-bg-gradient: linear-gradient(45deg, yellow, orange, #dd4814);
-    --scrollbar-bg-hover-gradient: linear-gradient(45deg, #B4DFDF, #5AA4C7, cyan);
+    --gradient-cyan: linear-gradient(45deg, #B4DFDF, #5AA4C7, cyan);
+    --gradient-orange: linear-gradient(45deg, yellow, orange, #dd4814);
+    --gradient-text-animation: linear-gradient(45deg, cyan, red, green, blue, #dd4814);
+    --gradient-text-animation-bg: cyan;
+    --body-bg-color: white;
+    --project-title: black;
+    --certification-text: black;
+    --collapsible-bg: white;
     --footer-text-color: #5e0080;
     --nav-link-color: white;
     --nav-link-hover-bgcolor: white;
     --nav-link-hover-color: cyan;
     --welcome-image: url('https://media.giphy.com/media/3osxYuthM9iM6IEIY8/giphy.gif');
+    --dl-btn-bg-color: white;
+    --dl-btn-text-color: black;
+    --dl-btn-bg-hover-color: black;
+    --dl-btn-text-hover-color: white;
     --loading-transition: width 3s, height 3s;
 }
 
@@ -19,6 +26,7 @@ body, html {
     margin: 0;
     height: 100%;
     font-family: monospace;
+    background-color: var(--body-bg-color);
 }
 
 #navbar {
@@ -29,7 +37,7 @@ body, html {
     justify-content: flex-end;
     align-items: center;
     width: 100%;
-    background-image: var(--nav-bg-gradient);
+    background-image: var(--nav-gradient);
 }
 
 #navbar>a {
@@ -120,6 +128,7 @@ hr {
     font-size: 15px;
     padding: 10px;
     height: 40px;
+    color: var(--project-title);
 }
 
 .project-link>img {
@@ -144,14 +153,14 @@ hr {
 }
 
 #footer {
-    background-image: var(--footer-bg-gradient);
+    background-image: var(--footer-gradient);
     color: var(--footer-text-color);
     text-align: left;
     padding-left: 30px;
 }
 
 .collapsible {
-    background-color: white;
+    background-color: var(--collapsible-bg);
     padding: 18px;
     width: 100%;
     border: none;
@@ -176,22 +185,22 @@ hr {
 }
 
 #gradient-text-welcome {
-    background-image: var(--welcome-text-gradient);
+    background-image: var(--gradient-cyan);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
 
 #gradient-text-contact {
-    background-image: var(--contact-text-gradient);
+    background-image: var(--gradient-orange);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
 
 .gradient-text-animation {
-    background-color: cyan;
-    background-image: var(--text-animation-gradient);
+    background-color: var(--gradient-text-animation-bg);
+    background-image: var(--gradient-text-animation);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -231,11 +240,11 @@ hr {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-image: var(--scrollbar-bg-gradient);
+    background-image: var(--nav-gradient);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-image: var(--scrollbar-bg-hover-gradient);
+    background-image: var(--footer-gradient);
 }
 
 #loading {
@@ -254,4 +263,27 @@ hr {
     max-height: 100%;
     margin: 0 auto;
     width: auto;
+}
+
+#dark-light {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+#dark-light>button {
+    border: none;
+    outline: none;
+    background-color: var(--dl-btn-bg-color);
+    border-radius: 10px;
+    color: var(--dl-btn-text-color);
+}
+
+#dark-light>button:hover {
+    background-color: var(--dl-btn-bg-hover-color);
+    color: var(--dl-btn-text-hover-color);
+}
+
+.certification {
+    color: var(--certification-text);
 }
