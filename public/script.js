@@ -20,11 +20,19 @@ window.addEventListener('load', () => {
 
   let btn = document.getElementById('dark-light-btn');
   btn.addEventListener('click', () => {
-    if (btn.checked == true) {
-      setMode('Dark');
-    } else {
-      setMode('Light')
-    }
+    setTimeout(() => {
+      document.getElementById('loading').style.height = '100%';
+    }, 0);
+    setTimeout(() => {
+      if (btn.checked == true) {
+        setMode('Dark');
+      } else {
+        setMode('Light')
+      }
+    }, 3000)
+    setTimeout(() => {
+      document.getElementById('loading').style.height = 0;
+    }, 3000);
   })
 
   const setMode = (mode) => {
