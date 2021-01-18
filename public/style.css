@@ -7,18 +7,15 @@
     --gradient-text-animation: linear-gradient(45deg, cyan, red, green, blue, #dd4814);
     --gradient-text-animation-bg: cyan;
     --body-bg-color: white;
-    --project-title: black;
-    --certification-text: black;
-    --collapsible-bg: white;
-    --footer-text-color: #5e0080;
     --nav-link-color: white;
     --nav-link-hover-bgcolor: white;
     --nav-link-hover-color: cyan;
+    --collapsible-bg: white;
+    --project-title: black;
+    --certification-text: black;
+    --footer-text-color: #5e0080;
+    --dark-light-text: cyan;
     --welcome-image: url('https://media.giphy.com/media/3osxYuthM9iM6IEIY8/giphy.gif');
-    --dl-btn-bg-color: white;
-    --dl-btn-text-color: black;
-    --dl-btn-bg-hover-color: black;
-    --dl-btn-text-hover-color: white;
     --loading-transition: width 3s, height 3s;
 }
 
@@ -155,8 +152,22 @@ hr {
 #footer {
     background-image: var(--footer-gradient);
     color: var(--footer-text-color);
-    text-align: left;
-    padding-left: 30px;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#dark-light {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#dark-light-text {
+    color: var(--dark-light-text);
+    padding-left: 10px;
+    font-size: 20px;
 }
 
 .collapsible {
@@ -265,25 +276,66 @@ hr {
     width: auto;
 }
 
-#dark-light {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-}
-
-#dark-light>button {
-    border: none;
-    outline: none;
-    background-color: var(--dl-btn-bg-color);
-    border-radius: 10px;
-    color: var(--dl-btn-text-color);
-}
-
-#dark-light>button:hover {
-    background-color: var(--dl-btn-bg-hover-color);
-    color: var(--dl-btn-text-hover-color);
-}
-
 .certification {
     color: var(--certification-text);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: cyan;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: white;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px white;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    background-color: black;
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
 }
