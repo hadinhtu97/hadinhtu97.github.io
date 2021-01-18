@@ -44,8 +44,6 @@ window.addEventListener('load', () => {
       root.style.setProperty('--nav-gradient', 'linear-gradient(45deg, #B4DFDF, #5AA4C7, cyan)');
       root.style.setProperty('--footer-gradient', 'linear-gradient(45deg, yellow, orange, #dd4814)');
       root.style.setProperty('--hr-gradient', 'linear-gradient(45deg, cyan, #dd4814)');
-      root.style.setProperty('--gradient-text-animation', 'linear-gradient(45deg, cyan, red, green, blue, #dd4814)');
-      root.style.setProperty('--gradient-text-animation-bg', 'cyan');
       root.style.setProperty('--nav-link-hover-color', 'cyan');
       root.style.setProperty('--footer-text-color', '#5e0080');
       root.style.setProperty('--project-title', 'black');
@@ -61,8 +59,6 @@ window.addEventListener('load', () => {
       root.style.setProperty('--nav-gradient', 'linear-gradient(45deg, #c9c6bd, #4f4e4a, black)');
       root.style.setProperty('--footer-gradient', 'linear-gradient(45deg, #c9c6bd, #4f4e4a, black)');
       root.style.setProperty('--hr-gradient', 'linear-gradient(45deg, #c9c6bd, #4f4e4a, black)');
-      root.style.setProperty('--gradient-text-animation', 'white');
-      root.style.setProperty('--gradient-text-animation-bg', 'white');
       root.style.setProperty('--nav-link-hover-color', 'black');
       root.style.setProperty('--footer-text-color', 'black');
       root.style.setProperty('--project-title', 'white');
