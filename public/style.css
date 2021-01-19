@@ -30,7 +30,7 @@ body, html {
     font-size: 25px;
     text-decoration: none;
     color: white;
-    margin-right: 30px;
+    margin-right: 20px;
 }
 
 #navbar>a:hover {
@@ -55,13 +55,13 @@ body, html {
     font-size: 20px;
 }
 
-#gallery, #contact, #skill, #certificate {
+#gallery, #contact, #skill, #certificate, #about {
     margin: 100px 50px;
     padding: 20px;
     border: 2px solid white;
 }
 
-#gallery>legend, #contact>legend, #skill>legend, #certificate>legend {
+legend {
     text-align: center;
     font-size: 25px;
     color: white;
@@ -163,6 +163,28 @@ body, html {
     cursor: pointer;
 }
 
+#about-text {
+    font-size: 15px;
+    color: white;
+    margin: 20px;
+}
+
+#about-links {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.about-link {
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    margin: 10px 20px;
+}
+
+.about-link:hover {
+    transform: var(--scale);
+}
+
 #contact-links {
     display: flex;
     flex-direction: row;
@@ -173,8 +195,7 @@ body, html {
     font-weight: bold;
     font-size: 20px;
     color: white;
-    text-decoration: none;
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
 .contact-link:hover {
@@ -190,6 +211,9 @@ body, html {
 }
 
 @media (max-width:800px) {
+    #about-links {
+        display: grid;
+    }
     #contact-links {
         display: grid;
     }
