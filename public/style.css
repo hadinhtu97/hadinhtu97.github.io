@@ -134,7 +134,7 @@ body, html {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5)
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .certificate-modal-content {
@@ -149,7 +149,7 @@ body, html {
 .certificate-modal-close {
     display: block;
     color: cyan;
-    font-size: 28px;
+    font-size: 40px;
     font-weight: bold;
     cursor: pointer;
 }
