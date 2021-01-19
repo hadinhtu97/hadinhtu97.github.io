@@ -67,7 +67,7 @@ body, html {
 }
 
 .project-group {
-   text-align: center;
+    text-align: center;
 }
 
 .project-tile {
@@ -108,22 +108,50 @@ body, html {
     color: white;
 }
 
-#certificate-links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#certificate-links>a {
+.certificate-btn {
+    display: block;
+    margin: 10px auto;
+    outline: none;
+    border: none;
+    background: none;
+    color: white;
+    font-family: monospace;
     font-size: 25px;
     font-weight: bold;
-    color: white;
-    text-decoration: none;
-    margin-bottom: 20px;
+    cursor: pointer;
 }
 
-#certificate-links>a:hover {
+.certificate-btn:hover {
     transform: scale(1.2);
+}
+
+.certificate-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.certificate-modal-content {
+    text-align: center;
+}
+
+.certificate-modal-img {
+    max-width: 80%;
+    height: auto;
+}
+
+.certificate-modal-close {
+    display: block;
+    color: cyan;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 #contact-links {
