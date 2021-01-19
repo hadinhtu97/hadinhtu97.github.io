@@ -47,7 +47,7 @@ body, html {
 }
 
 #whoami>h1 {
-    font-size: 50px;
+    font-size: 40px;
 }
 
 #whoami>p {
@@ -67,28 +67,45 @@ body, html {
 }
 
 .project-group {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 20px 0;
+   text-align: center;
 }
 
 .project-tile {
-    border: 1px solid #777;
-    width: 20%;
+    display: inline-block;
+    margin: 10px;
 }
 
 .project-title {
     text-align: center;
-    font-size: 15px;
-    padding: 10px;
-    height: 40px;
+    font-size: 10px;
     color: white;
 }
 
 .project-link>img {
-    width: 100%;
+    width: 200px;
     height: 100px;
+}
+
+#front-end>p, #back-end>p, #other>p, #programming>p {
+    font-size: 20px;
+    color: white;
+}
+
+.skill-group {
+    display: inline-block;
+    margin: 10px;
+}
+
+.skill-tile>img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.skill-title {
+    display: inline;
+    font-size: 15px;
+    color: white;
 }
 
 #certificate-links {
@@ -99,6 +116,7 @@ body, html {
 
 #certificate-links>a {
     font-size: 25px;
+    font-weight: bold;
     color: white;
     text-decoration: none;
     margin: 5px 0;
@@ -115,6 +133,7 @@ body, html {
 }
 
 #contact-links>a {
+    font-weight: bold;
     font-size: 20px;
     color: white;
     text-decoration: none;
@@ -136,13 +155,6 @@ body, html {
     #contact-links {
         display: grid;
     }
-    .project-group {
-        display: grid;
-    }
-    .project-tile {
-        width: 50%;
-        margin: 10px auto;
-    }
     #whoami {
         max-width: 80%;
     }
@@ -151,9 +163,6 @@ body, html {
 @media (max-width:600px) {
     #navbar>a {
         font-size: 15px;
-    }
-    .project-tile {
-        width: 80%;
     }
 }
 
