@@ -14,14 +14,6 @@ window.addEventListener('load', () => {
     })
   }
 
-  window.onclick = function (event) {
-    for (let i = 0; i < certificateModal.length; i++) {
-      if (event.target == certificateModal[i]) {
-        certificateModal[i].style.display = 'none'
-      }
-    }
-  }
-
   setTimeout(() => {
     document.getElementById('loading').style.height = 0;
   }, 1000);
