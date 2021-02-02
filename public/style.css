@@ -55,6 +55,11 @@ body, html {
     font-size: 20px;
 }
 
+#whoami>p>a {
+    font-size: 20px;
+    color: cyan;
+}
+
 #gallery, #contact, #skill, #certificate, #about {
     margin: 100px 50px;
     border: 2px solid white;
