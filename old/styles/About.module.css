@@ -1,0 +1,23 @@
+.about {
+    margin: 2rem 0;
+}
+
+.about p {
+    line-height: 1.5;
+    font-size: 1.3rem;
+    text-align: justify;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 1rem 0;
+    color: #161616;
+}
+
+.color {
+    color: #0070f3;
+}
+
+.link a{
+    color: #0070f3;
+    text-decoration: underline;
+}
