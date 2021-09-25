@@ -13,11 +13,19 @@ a {
   text-decoration: none;
 }
 
+table {
+  width: 100%;
+}
+
+td {
+  border: 1px solid gray;
+}
+
 .container {
   min-height: 100vh;
   max-width: 800px;
   margin: 48px auto;
-  padding: 16px;
+  padding: 32px 16px;
   border: 2px solid gray;
   box-shadow: 5px 5px gray;
 }
@@ -34,14 +42,12 @@ a {
   font-size: 32px;
 }
 
-.more-info-wrapper {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
+.role {
+  font-size: 18px;
 }
 
 .body {
-  margin-top: 32px;
+  margin-top: 48px;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -55,24 +61,74 @@ a {
 
 .section-title {
   font-size: 24px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid gray;
 }
 
-.article {
-  display: flex;
-  flex-direction: column;
+.section-content {
+  margin-top: 8px;
+  margin-left: 16px;
 }
 
-.article-title-wrapper {
+.introduce {
+  text-align: justify;
+}
+
+.contact {
+  margin-top: 8px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.article-title {
-  font-size: 20px;
+.companies {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.article-date {
+.company-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.company-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+
+.text-12 {
   font-size: 12px;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+}
+
+.project-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+
+.skill-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2px;
 }
