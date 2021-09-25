@@ -71,6 +71,7 @@ td {
 
 .introduce {
   text-align: justify;
+  line-height: 24px;
 }
 
 .contact {
@@ -78,8 +79,15 @@ td {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
+}
+
+.contact-cl {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
 }
 
 .companies {
