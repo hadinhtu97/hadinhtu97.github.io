@@ -67,6 +67,8 @@ td {
 .section-content {
   margin-top: 8px;
   margin-left: 16px;
+  text-align: justify;
+  line-height: 24px;
 }
 
 .introduce {
@@ -75,7 +77,7 @@ td {
 }
 
 .contact {
-  margin-top: 8px;
+  margin-top: 4px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -139,4 +141,23 @@ td {
   flex-direction: row;
   align-items: center;
   gap: 2px;
+}
+
+.container-i {
+  min-height: 100vh;
+  background-color: #1b2431;
+  color: white;
+  padding-top: 100px;
+  padding-left: 200px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-i {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.orange-color {
+  color: #ed6734;
 }
