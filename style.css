@@ -1,0 +1,72 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Waiting for the Sunrise', cursive;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width: 1000px) {
+    .typing div {
+        opacity: 0;
+        border-right: .15em solid orange;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .typing div:nth-child(1) {
+        width: 2em;
+        animation: typing 1s 1s steps(40, end) forwards;
+    }
+
+    .typing div:nth-child(2) {
+        width: 6em;
+        animation: typing 2s 2s steps(40, end) forwards;
+    }
+
+    .typing div:nth-child(3) {
+        width: 8em;
+        animation: typing 2.5s 4s steps(40, end) forwards;
+    }
+
+    .typing div:nth-child(4) {
+        width: 22em;
+        animation: typing 6s 6.5s steps(80, end) forwards;
+    }
+
+    .typing div:nth-child(5) {
+        width: 30em;
+        animation: typing 6s 12.5s steps(120, end) forwards;
+    }
+
+    .line {
+        animation: line-blink 1s 18.5s step-end infinite forwards;
+    }
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    99.9% {
+        border-right: .15em solid orange;
+    }
+    100% {
+        opacity: 1;
+        border: none;
+    }
+}
+
+@keyframes line-blink {
+    0% {
+        text-decoration-color: white;
+    }
+    50% {
+        text-decoration-color: orange;
+    }
+}
